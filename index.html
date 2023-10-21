@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,18 +7,167 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
-  <p>Проверка</p>
+<nav id="desktop-nav">
+  <div class="logo">PalDeFlex</div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#elsa">Моя кошка</a></li>
+      <li><a href="#contact">Связаться со мной</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo">John Doe</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">Обо мне</a></li>
+      <li><a href="#elsa" onclick="toggleMenu()">Моя кошка</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Связаться со мной</a></li>
+    </div>
+  </div>
+</nav>
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="assets/profile-pic.jpg" alt="John Doe profile picture" class="section__profile-pic"/>
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">Привет, я</p>
+    <h1 class="title">Селиванов Павел</h1>
+    <p class="section__text__p2">Студент УрГЭУ</p>
+    <div class="btn-container">
+
+      <button class="btn btn-color-1 btn-contact" onclick="location.href='./#contact'">
+        Связаться со мной
+      </button>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <p class="section__text__p1">Узнай побольше</p>
+  <h1 class="title">Обо мне</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+          src="assets/about-pic.jpg"
+          alt="Profile picture"
+          class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+              src="assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+          />
+          <h3>Опыт</h3>
+          <p>20+ лет <br/>Компьютерных игр</p>
+        </div>
+        <div class="details-container">
+          <img
+              src="assets/education.png"
+              alt="Education icon"
+              class="icon"
+          />
+          <h3>Образование</h3>
+          <p>Уральский государственный <br> Экономический университет</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          Позвольте представиться, я Павел - искатель знаний и творческого духа, не очень молодой студента
+          университета, который с горячим увлечением погружается в мир создания веб-сайтов и
+          чтения различной литературы. Моя душа оживляется виртуальными мирами компьютерных игр, а сердце
+          полно любви к его верному пушистому спутнику - кошке.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="elsa">
+  <p class="section__text__p1">Посмотри на мою кошку</p>
+  <h1 class="title">Её зовут Эльза</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+              src="assets/elsa-1.jpg"
+              alt="Эльза смотрит"
+              class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Смотрит</h2>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+              src="assets/elsa-2.jpg"
+              alt="Эльза на стиле"
+              class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">На стиле</h2>
+
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+              src="assets/elsa-3.jpg"
+              alt="Project 3"
+              class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Зевает</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <p class="section__text__p1">Будем на связи!</p>
+  <h1 class="title">Свяжись со мной</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+          src="assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:paldeflex@gmail.com">paldeflex@gmail.com</a></p>
+    </div>
+
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#elsa">Моя кошка</a></li>
+        <li><a href="#contact">Связаться со мной</a></li>
+      </ul>
+    </div>
+  </nav>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
