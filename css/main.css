@@ -52,6 +52,11 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+.active_link {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
 .logo {
   font-size: 2rem;
 }
@@ -507,6 +512,7 @@ footer p {
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: auto;
     height: 46vw;

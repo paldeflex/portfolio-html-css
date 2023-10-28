@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Портфолио</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+<nav id="desktop-nav">
+  <div class="logo"><a href="index.html">PalDeFlex</a></div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="about.html">Обо мне</a></li>
+      <li><a href="elsa.html">Моя кошка</a></li>
+      <li><a href="contact.html" class="active_link">Связаться со мной</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo">PalDeFlex</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="about.html" onclick="toggleMenu()">Обо мне</a></li>
+      <li><a href="elsa.html" onclick="toggleMenu()">Моя кошка</a></li>
+      <li><a href="contact.html"  class="active_link" onclick="toggleMenu()">Связаться со мной</a></li>
+    </div>
+  </div>
+</nav>
+<section id="contact">
+  <p class="section__text__p1">Будем на связи!</p>
+  <h1 class="title">Свяжись со мной</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+          src="assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:paldeflex@gmail.com">paldeflex@gmail.com</a></p>
+    </div>
+
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="about.html">Обо мне</a></li>
+        <li><a href="elsa.html">Моя кошка</a></li>
+        <li><a href="contact.html" class="active_link">Связаться со мной</a></li>
+      </ul>
+    </div>
+  </nav>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
